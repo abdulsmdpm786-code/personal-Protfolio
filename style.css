@@ -174,4 +174,28 @@ margin-top: 10rem;
 .home-img {
   box-shadow: 1px 1px 10px 1px #1387c1; /* A soft grey shadow */
 }
-
+.home-img {
+ transition: transform 1s;
+}
+.home-img:hover { 
+    transform: scale(1.1); 
+}
+a{
+  position: relative;
+}
+ a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background:#1387c1;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
