@@ -1,0 +1,177 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101A20;
+}
+.header{
+    border-bottom: .5px solid #fdf7f733;
+    background-color: #101A20;
+    
+}
+.header a{
+    color: white;
+}
+ul li a{
+    margin-right: 5px;
+}
+.home-1{
+    color: white;
+    margin-top: 15rem;
+
+}
+.home-img{
+    height: 30rem;
+    margin-top: 10rem;
+    margin-left: 5rem;
+    border-radius: 10px;
+}
+.home-1 h2{
+    color:  #1387c1;
+    font-size: 3em;
+    font-weight: 500;
+}
+.btn {
+    background-color: #1387c1;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 30px;
+    
+}
+.btn-1 {
+    border: 1px solid #1387c1;
+    background-color: #101A20;
+    color: white;
+    margin-left: 30px;
+}
+.footer{
+    border-top: 1px solid #fdf7f733;
+height: 7rem;
+margin-top: 10rem;
+}
+.icons{
+    color: white;
+}
+
+.home-1 h3{
+  font-size: 5vmin;
+  color: #f6fcff;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "d"; }
+  2.2791%, 25.0698% { content: "de"; }
+  3.4186%, 23.9302% { content: "dev"; }
+  4.5581%, 22.7907% { content: "deve"; }
+  5.6977%, 21.6512% { content: "devel"; }
+  6.8372%, 20.5116% { content: "develo"; }
+  7.9767%, 19.3721% { content: "develop"; }
+  9.1163%, 18.2326% { content: "develope"; }
+  10.2558%, 17.0930% { content: "developer"; }
+
+  30.8%, 51.2% { content: ""; }
+  31.5%, 50.5% { content: "u"; }
+  32.2%, 49.8% { content: "ui"; }
+  32.9%, 49.1% { content: "ui/"; }
+  33.6%, 48.4% { content: "ui/u"; }
+  34.3%, 47.7% { content: "ui/ux"; }
+  35.0%, 47.0% { content: "ui/ux "; }
+  35.7%, 46.3% { content: "ui/ux d"; }
+  36.4%, 45.6% { content: "ui/ux de"; }
+  37.1%, 44.9% { content: "ui/ux des"; }
+  37.8%, 44.2% { content: "ui/ux desi"; }
+  38.5%, 43.5% { content: "ui/ux desig"; }
+  39.2%, 42.8% { content: "ui/ux design"; }
+  39.9%, 42.1% { content: "ui/ux designe"; }
+  40.6%, 41.4% { content: "ui/ux designer"; }
+
+  54.7%, 75.2% { content: ""; }
+  55.2%, 74.7% { content: "g"; }
+  55.7%, 74.2% { content: "gr"; }
+  56.2%, 73.7% { content: "gra"; }
+  56.7%, 73.2% { content: "grap"; }
+  57.2%, 72.7% { content: "graph"; }
+  57.7%, 72.2% { content: "graphi"; }
+  58.2%, 71.7% { content: "graphic"; }
+  58.7%, 71.2% { content: "graphic "; }
+  59.2%, 70.7% { content: "graphic d"; }
+  59.7%, 70.2% { content: "graphic de"; }
+  60.2%, 69.7% { content: "graphic des"; }
+  60.7%, 69.2% { content: "graphic desi"; }
+  61.2%, 68.7% { content: "graphic desig"; }
+  61.7%, 68.2% { content: "graphic design"; }
+  62.2%, 67.7% { content: "graphic designe"; }
+  62.7%, 67.2% { content: "graphic designer"; }
+
+  78.6%, 96.9% { content: ""; }
+  79.2%, 96.3% { content: "c"; }
+  79.7%, 95.8% { content: "co"; }
+  80.3%, 95.2% { content: "con"; }
+  80.8%, 94.7% { content: "cont"; }
+  81.4%, 94.1% { content: "conte"; }
+  81.9%, 93.6% { content: "conten"; }
+  82.5%, 93.0% { content: "content"; }
+  83.0%, 92.5% { content: "content "; }
+  83.6%, 91.9% { content: "content c"; }
+  84.1%, 91.4% { content: "content cr"; }
+  84.7%, 90.8% { content: "content cre"; }
+  85.2%, 90.3% { content: "content crea"; }
+  85.8%, 89.7% { content: "content creat"; }
+  86.3%, 89.2% { content: "content creato"; }
+  86.9%, 88.6% { content: "content creator"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+.typewriter {
+  --caret: currentcolor;
+  color: #1387c1; /* Change this code to whatever color you want */
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "ui/ux designer"; }
+    50% { content: "freelancer"; }
+    75% { content: "content creator"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+.icons i:hover {
+  color:  #1387c1;
+  
+}
+.home-img {
+  box-shadow: 1px 1px 10px 1px #1387c1; /* A soft grey shadow */
+}
+
