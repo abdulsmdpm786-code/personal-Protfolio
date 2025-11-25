@@ -147,7 +147,7 @@ margin-top: 10rem;
 }
 .typewriter {
   --caret: currentcolor;
-  color: #1387c1; /* Change this code to whatever color you want */
+  color: #1387c1; 
 }
 
 @media (prefers-reduced-motion) {
@@ -172,7 +172,7 @@ margin-top: 10rem;
   
 }
 .home-img {
-  box-shadow: 1px 1px 10px 1px #1387c1; /* A soft grey shadow */
+  box-shadow: 1px 1px 10px 1px #1387c1; 
 }
 .home-img {
  transition: transform 1s;
@@ -180,10 +180,10 @@ margin-top: 10rem;
 .home-img:hover { 
     transform: scale(1.1); 
 }
-a{
+ul li a{
   position: relative;
 }
- a:after {    
+ ul li a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -195,7 +195,7 @@ a{
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
+ul li a:hover:after { 
   width: 100%; 
   left: 0; 
 }
